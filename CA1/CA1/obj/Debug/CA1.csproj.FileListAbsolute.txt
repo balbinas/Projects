@@ -1,0 +1,6 @@
+\\vmware-host\Shared Folders\Documents\Visual Studio 2013\Projects\CA1\CA1\bin\Debug\CA1.dll.config
+\\vmware-host\Shared Folders\Documents\Visual Studio 2013\Projects\CA1\CA1\bin\Debug\CA1.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2013\Projects\CA1\CA1\bin\Debug\CA1.pdb
+\\vmware-host\Shared Folders\Documents\Visual Studio 2013\Projects\CA1\CA1\obj\Debug\CA1.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Documents\Visual Studio 2013\Projects\CA1\CA1\obj\Debug\CA1.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2013\Projects\CA1\CA1\obj\Debug\CA1.pdb

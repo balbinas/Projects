@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1> <b>Escolástica</h1></b>
+    <img onmouseover="bigImg(this)" src="https://www.miamioh.edu/cas/_files/images/poli-sci/homepage-slides/students.jpg" alt="Banner" width="850" height="200">
+    <p class="lead" id="demo">Welcome to your new favorite school site where you can check all of your units and courses!</p>
+    <br />
+    <p>
+        <a href="http://localhost:1687/Account/Login" class="btn btn-primary btn-lg">Log in now! &raquo;</a>
+        <button type="button" onclick="myFunction()">?</button>
+    </p>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Click Log in to get into your courses and start succeeding!";
+        }
+    </script>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Get school ready!</h2>
+        <p>
+            Our partner school supply store has lots of discounts and promotions for your return back to school this year!
+        </p>
+        <p><a class="btn btn-default" href="http://www.officeworks.com.au/shop/officeworks">Officeworks &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get to school in time!</h2>
+        <p>There are available buses to get to school, just check out the oficial website below!</p>
+        <p><a class="btn btn-default" href="http://www.action.act.gov.au/">Action buses &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get your gear ready!</h2>
+        <p>Check out Apple products to get tech-ready for school!</p>
+        <p><a class="btn btn-default" href="http://apple.com.au">Apple &raquo;</a></p>
+    </div>
+</div>

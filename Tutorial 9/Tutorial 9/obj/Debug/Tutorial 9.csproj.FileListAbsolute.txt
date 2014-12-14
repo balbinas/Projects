@@ -1,0 +1,6 @@
+\\vmware-host\shared folders\documents\visual studio 2013\Projects\Tutorial 9\Tutorial 9\bin\Debug\Tutorial 9.dll.config
+\\vmware-host\shared folders\documents\visual studio 2013\Projects\Tutorial 9\Tutorial 9\bin\Debug\Tutorial 9.dll
+\\vmware-host\shared folders\documents\visual studio 2013\Projects\Tutorial 9\Tutorial 9\bin\Debug\Tutorial 9.pdb
+\\vmware-host\shared folders\documents\visual studio 2013\Projects\Tutorial 9\Tutorial 9\obj\Debug\Tutorial 9.csprojResolveAssemblyReference.cache
+\\vmware-host\shared folders\documents\visual studio 2013\Projects\Tutorial 9\Tutorial 9\obj\Debug\Tutorial 9.dll
+\\vmware-host\shared folders\documents\visual studio 2013\Projects\Tutorial 9\Tutorial 9\obj\Debug\Tutorial 9.pdb

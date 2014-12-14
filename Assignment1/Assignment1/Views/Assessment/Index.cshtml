@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Download your student's assessments</h2>
+
+@if (User.IsInRole("Student"))
+{
+    using (Html.BeginForm("UploadFile", "Assessment", FormMethod.Post,
+    new { enctype = "multipart/form-data" }))
+    {
+        <input type="file" name="selectedFile" />
+        <input type="submit" value="Upload" />
+    }
+}
+
+
+<div id="CONTENT">
+
+    <table class="table">
+        <tr>
+            <th>
+                
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Mark)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Mark)
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { id = item.Id })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+</div>
+
+}

@@ -1,0 +1,6 @@
+\\vmware-host\shared folders\documents\visual studio 2013\Projects\CreateAccouhnt\CreateAccouhnt\bin\CreateAccouhnt.dll.config
+\\vmware-host\shared folders\documents\visual studio 2013\Projects\CreateAccouhnt\CreateAccouhnt\bin\CreateAccouhnt.dll
+\\vmware-host\shared folders\documents\visual studio 2013\Projects\CreateAccouhnt\CreateAccouhnt\bin\CreateAccouhnt.pdb
+\\vmware-host\shared folders\documents\visual studio 2013\Projects\CreateAccouhnt\CreateAccouhnt\obj\Debug\CreateAccouhnt.csprojResolveAssemblyReference.cache
+\\vmware-host\shared folders\documents\visual studio 2013\Projects\CreateAccouhnt\CreateAccouhnt\obj\Debug\CreateAccouhnt.dll
+\\vmware-host\shared folders\documents\visual studio 2013\Projects\CreateAccouhnt\CreateAccouhnt\obj\Debug\CreateAccouhnt.pdb

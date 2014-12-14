@@ -1,0 +1,87 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lecture presentation</h2>
+
+<form>File Name: </form>
+
+@if (User.IsInRole("Lecturer"))
+{
+    using (Html.BeginForm("UploadFile", "Teaching", FormMethod.Post,
+    new { enctype = "multipart/form-data" }))
+    {
+        <input type="file" name="selectedFile" />
+        <input type="submit" value="Upload" />
+    }
+}
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.StudentName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mark)
+        </td>
+        <td>
+            @Html.ActionLink("DownloadFile", "DownloadFile", new { fileName = item.FileName })
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id = item.Id })
+
+        </td>
+    </tr>
+}
+
+
+
+
+
+
+
+
+
+
+@if (User.IsInRole("Student")) { 
+<p>List of uploaded lecture files :</p>
+<div class="row" style="font-size:x-small;background-color:antiquewhite;border:1px solid blue;">
+    @foreach (var item in Model)
+    {
+        <a href="~/FileUploads/@item.Split('\\')[(item.Split('\\').Length-1)]"
+            target="_blank">Download File</a>
+        <br />
+    }
+</div>
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="large-9 push-3 columns">
+
+        <h3>Teacher's Corner</h3>
+
+        <h4>Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin. Venison tail chuck pork chop, andouille ball tip beef ribs flank boudin bacon. Salami andouille pork belly short ribs flank cow. Salami sirloin turkey kielbasa. Sausage venison pork loin leberkas chuck short loin, cow ham prosciutto pastrami jowl. Ham hock jerky tri-tip, fatback hamburger shoulder swine pancetta ground round. Tri-tip prosciutto meatball turkey, brisket spare ribs shankle chuck cow chicken ham hock boudin meatloaf jowl.</h4>
+
+        <p>Ground round pastrami pork loin tenderloin jerky. Jerky spare ribs biltong, ham hock ham capicola pork. Jerky turducken pork, meatloaf sausage capicola swine corned beef turkey short loin. Tongue prosciutto pork loin, ground round spare ribs venison kielbasa strip steak.</p>
+
+        <p>Hamburger bresaola turkey t-bone, leberkas salami pork chop ham hock beef ribs. Rump biltong meatball venison, short ribs pork loin shank shankle corned beef beef. Cow salami jowl short loin hamburger fatback. Short ribs pork belly shoulder pastrami drumstick salami corned beef ham hock bresaola. Swine filet mignon cow sausage ball tip. Cow ribeye ground round, sausage pork loin pig beef ball tip turkey boudin.</p>
+
+        <p>Prosciutto ball tip filet mignon andouille frankfurter chicken rump sausage meatball. Filet mignon meatloaf ground round andouille ham hock pork. Bresaola short loin meatball chuck hamburger pig. Turkey venison chuck, tongue fatback tail swine jerky corned beef shank kielbasa prosciutto ribeye ham tri-tip. Rump bacon pork belly meatloaf shoulder short loin meatball kielbasa pork loin tongue bresaola brisket corned beef jowl prosciutto. Beef ribs shankle short ribs pork belly corned beef fatback pork chop tongue biltong boudin strip steak sirloin meatloaf pancetta.</p>
+
+    </div>
+
